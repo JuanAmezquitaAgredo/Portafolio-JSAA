@@ -1,0 +1,24 @@
+{
+  "Role": [
+    {
+      "id": "1",
+      "name": "Administrador"
+    },
+    {
+      "id": "2",
+      "name": "Usuario"
+    }
+  ],
+  "Flight": [],
+  "User": [
+    {
+      "id": "75e8",
+      "name": "juan",
+      "email": "juan@ejemplo.com",
+      "birthdate": "2024-06-12",
+      "password": "U2FsdGVkX1+wH/DPKyt6SWmesf2w91fFeBMhUaRAWZA=",
+      "rolID": "1"
+    }
+  ],
+  "Booking": []
+}
