@@ -1,0 +1,82 @@
+.card{
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.cardContent{
+    width: 100%;
+    height: 100%;
+    background-color: #bebebe;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.cardContent img{
+    width: 50%;
+    height: 90%;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+.cardInfo{
+    width: 25%;
+    height: 90%;
+    border: 1px solid black;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cardButtons{
+    width: 15%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.button1 {
+    text-decoration: none;
+    width: 80%;
+    height: 20%;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000; 
+    color: #ffffff; 
+}
+
+.button1 img{
+    width: 90%;
+    height: 60%;
+}
+
+.button2 {
+    text-decoration: none;
+    width: 80%;
+    height: 20%;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0003ce; /* Color rojo */
+    color: #ffffff; /* Texto blanco */
+}
+
+.cardButton:hover {
+    width: 85%;
+    height: 25%;
+}

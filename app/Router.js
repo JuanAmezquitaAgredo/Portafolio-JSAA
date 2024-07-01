@@ -8,21 +8,10 @@ export function Router(){
         return route.path === path
     });
 
-    const privateRoutes = routes.private.find(route =>{
-        return route.path == path
-    });
-
 
     if(path == '/'){
-        navigateTo('/login')
+        navigateTo('/HomePage')
         return
-    }
-
-    if(path === '/login' || path === '/register'){
-        if(localStorage.getItem('token')){
-            navigateTo('/dashboard')
-            return
-        }
     }
 
     //Dirigirlo a las rutas publicas
@@ -30,17 +19,6 @@ export function Router(){
         publicRoutes.page()
         return
     }
-
-    //dirigir a rutas rpivadas
-
-    if(privateRoutes){
-        if(!localStorage.getItem('token')){
-            navigateTo('/login')
-        }
-        privateRoutes.page()
-        return
-    }
-
 
 }
 

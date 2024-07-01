@@ -1,28 +1,17 @@
 import { navigateTo } from "../../Router";
+import { header } from './header/header.js';
+import { cards } from "./cards/cards.js";
+import styles from './home.css';
 
 export function HomePage(){
     const root = document.getElementById('root');
+    const { html: headerHtml} = header()
+    const { html: cardsHtml} = cards()
 
     root.innerHTML =`
-    <h1>Vuelos actuales</h1>
-    <button id="logout-btn">Cerrar Sesion</button>
-    <div id="flights"></div>
+    <div class="${styles.body}">
+    ${headerHtml}
+    ${cardsHtml}
     `;
-
-    //logout logic
-
-    const $logoutbtn = document.getElementById('logout-btn');
-    $logoutbtn.addEventListener('click', () => {
-        localStorage.removeItem('token');
-        navigateTo('/login');
-    });
-
-    //Administrator Logic
-
-    fetch('http://localhost:3000/User')
-    .then(response => response.json())
-    .then(jsonObject => {
-        console.log(jsonObject[0].rolID);
-    })
     
 }
